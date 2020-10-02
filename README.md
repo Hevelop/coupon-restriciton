@@ -28,7 +28,6 @@ Example:
 
 * The model that implement the new condition type, is configurable from the di.xml
     * List of arguments that are configurable:
-        * form_name
         * attribute
         * attribute_label
         * attribute_to_check
