@@ -8,7 +8,6 @@
  */
 namespace Hevelop\CouponRestriction\Model\Rule\Condition;
 
-use Hevelop\Biffi\Model\Product\Type\Configurable;
 use Hevelop\CouponRestriction\Helper\HelperFunction;
 use Magento\Backend\Helper\Data;
 use Magento\Catalog\Api\ProductRepositoryInterface;
