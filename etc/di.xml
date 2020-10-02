@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2020 Hevelop srl (https://hevelop.com). All rights reserved.
+  ~ License: https://opensource.org/licenses/agpl-3.0  AGPL-3.0 License
+  ~ Author: Nicolò Dian <nicolo@hevelop.com>
+  ~ Package: Hevelop_CouponRestriction
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="\Magento\SalesRule\Model\Rule\Condition\Product\Combine">
+        <plugin name="after_get_conditions"
+                type="Hevelop\CouponRestriction\Plugin\Rule\Condition\Product\AfterGetConditionPlugin"
+                sortOrder="1" disabled="false" />
+    </type>
+
+    <type name="Hevelop\CouponRestriction\Model\Rule\Condition\NoCatalogRuleProduct">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="form_name" xsi:type="string">sales_rule_form</item>
+                <item name="attribute" xsi:type="string">no_catalog_rule</item>
+                <item name="attribute_label" xsi:type="string" translate="true">Exclude products with a Catalog Price Rule</item>
+                <item name="attribute_to_check" xsi:type="string">no_catalog_rule</item>
+                <item name="custom_value_element_type" xsi:type="string">select</item>
+                <item name="custom_input_type" xsi:type="string">catalog_rule</item>
+                <item name="custom_rule_operator" xsi:type="string">==</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>
