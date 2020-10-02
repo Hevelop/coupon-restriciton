@@ -1,7 +1,7 @@
 Hevelop_CouponRestriction
 -------------------------
 
-####Version: 1.0.0 
+#### Version: 1.0.0 
 
 
 This module implements restriction for a coupon code.
@@ -16,7 +16,7 @@ Example:
 * I try to apply the coupon TEST10 that give me a discount of 10%
 * This coupon will be applied only for SKU 0002
 
-##Configuration
+## Configuration
 
 * Go to Marketing -> Cart Price Rule
 * Edit or Create a rule
@@ -24,7 +24,7 @@ Example:
     * **Exclude products with a Catalog Price Rule Is Yes**
     * This condition allow the coupon code only to the cart items that haven't a Catalog Price rule
     
-##For Developers
+## For Developers
 
 * The model that implement the new condition type, is configurable from the di.xml
     * List of arguments that are configurable:
