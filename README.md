@@ -20,7 +20,7 @@ Example:
 
 * Go to Marketing -> Cart Price Rule
 * Edit or Create a rule
-* On the *Conditions* section under the *Action* tab, add the following row_
+* On the *Conditions* section under the *Action* tab, add the following row:
     * **Exclude products with a Catalog Price Rule Is Yes**
     * This condition allow the coupon code only to the cart items that haven't a Catalog Price rule
     
