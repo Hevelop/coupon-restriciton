@@ -12,7 +12,7 @@ use Hevelop\CouponRestriction\Model\Rule\Condition\NoCatalogRuleProduct;
 use Magento\SalesRule\Model\Rule\Condition\Product\Combine;
 
 
-class AfterGetConditionPlugin extends Combine
+class AfterGetConditionPlugin
 {
     
     /**
